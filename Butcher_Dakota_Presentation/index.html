@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Remodal | Dakota Butcher</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+        <link rel="stylesheet" href="css/jquery.remodal.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+        
+        <style>
+            .slider {
+              display:none;
+            }
+        </style>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+                <section>
+                    <h1>Remodal</h1>
+                    <h2>By Dakota Butcher</h2>
+                    <p><a href="http://vodkabears.github.io/remodal/">vodkabears.github.io/remodal</a></p>
+                </section>
+                <section>
+                    <h1>Example #1</h1>
+                    <div class="remodal-bg">
+                        <a href="#modal"><h2>Click Here</h2></a>
+                        <div class="remodal" data-remodal-id="modal">
+                            <h1>Example</h1>
+                            <p>This is my example modal.</p>
+                            
+                            <a class="remodal-confirm" href="#">OK</a>
+                        </div>
+                    </div>
+                </section>
+                
+                <section>
+                    <h1>Why I chose this plugin</h1>
+                    <p>I looked at over 100 plugins and so many of them seemed fun to do. I originally was going to do my presentation on Unslider, which is a content slider plugin. After a few attempts I decided to try Remodal and it was very intuitive and fun to use.</p>
+                </section>
+                
+                <section>
+                    <h1>How I started the project</h1>
+                    <p>I started this project with the revealJs files. I started reserching the plugin, trying to figure out how to set up Remodal. As I said before this plugin is very intuitive, so it was pretty easy to learn.</p>
+                </section>
+                
+                <section>
+                    <h1>Code View</h1>
+                    <pre><code>
+&#x3C;div class=&#x22;remodal-bg&#x22;&#x3E;
+    &#x3C;a href=&#x22;#modal&#x22;&#x3E;&#x3C;h2&#x3E;Click Here&#x3C;/h2&#x3E;&#x3C;/a&#x3E;
+    &#x3C;div class=&#x22;remodal&#x22; data-remodal-id=&#x22;modal&#x22;&#x3E;
+        &#x3C;h1&#x3E;Example&#x3C;/h1&#x3E;
+        &#x3C;p&#x3E;This is my example modal.&#x3C;/p&#x3E;
+
+        &#x3C;a class=&#x22;remodal-confirm&#x22; href=&#x22;#&#x22;&#x3E;OK&#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                    </code></pre>
+                </section>
+                
+                <section>
+                    <h1>Code Setup</h1>
+                    <p>As you can see in the code view it did not take much code to make this possible. All it takes is a div with the class of "remodal-bg", then you need a anchor tag to call the modal. After all of that, the only thing left is to add the modal. To do that you just add a div with a class of "remodal", add your content and you cand add a confirm or cancel button to the modal.</p>
+                </section>
+                
+                <section>
+                    <h1>One more example</h1>
+                    <p>I am going to do one more simple example to show the Remodal again.</p>
+                </section>
+                
+                <section>
+                    <h1>Example #2</h1>
+                    <div class="remodal-bg">
+                        <a href="#modal2"><h2>Click This</h2></a>
+                        <div class="remodal" data-remodal-id="modal2">
+                            <h1>Headline 1</h1>
+                            <h2>Headline 2</h2>
+                            <p>Example paragraph</p>
+                            
+                            <a class="remodal-confirm" href="#">Yes</a>
+                            <a class="remodal-cancel" href="#">No</a>
+                        </div>
+                    </div>
+                    
+                </section>
+                
+                <section>
+                    <h1>Code View</h1>
+                    <pre><code>
+&#x3C;div class=&#x22;remodal-bg&#x22;&#x3E;
+    &#x3C;a href=&#x22;#modal2&#x22;&#x3E;&#x3C;h2&#x3E;Click This&#x3C;/h2&#x3E;&#x3C;/a&#x3E;
+    &#x3C;div class=&#x22;remodal&#x22; data-remodal-id=&#x22;modal2&#x22;&#x3E;
+        &#x3C;h1&#x3E;Headline 1&#x3C;/h1&#x3E;
+        &#x3C;h2&#x3E;Headline 2&#x3C;/h2&#x3E;
+        &#x3C;p&#x3E;Example paragraph&#x3C;/p&#x3E;
+
+        &#x3C;a class=&#x22;remodal-confirm&#x22; href=&#x22;#&#x22;&#x3E;Yes&#x3C;/a&#x3E;
+        &#x3C;a class=&#x22;remodal-cancel&#x22; href=&#x22;#&#x22;&#x3E;No&#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                    </code></pre>
+                </section>
+                
+                <section>
+                    <h1>Wrap Up</h1>
+                    <p>I had a lot of fun with this plugin. It would be very usful if you do not have the knowledge to make a modal yourself, or even if your using it on a personal project. All of the plugins that I looked into looked about as intuitive as this one and I will look more into plugins in the future.</p>
+                </section>
+				
+
+			</div>
+
+		</div>
+        
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/jquery.remodal.js"></script>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+        
+        
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
